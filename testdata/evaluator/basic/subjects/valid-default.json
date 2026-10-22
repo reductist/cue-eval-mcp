@@ -1,0 +1,6 @@
+{
+  "id": "record-one",
+  "nested": {
+    "count": 2
+  }
+}

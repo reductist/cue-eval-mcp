@@ -1,0 +1,31 @@
+{
+  "apiVersion": "cue-eval.dev/project/v1alpha1",
+  "packs": [
+    {
+      "id": "toy-plugin",
+      "title": "Synthetic plugin contracts",
+      "summary": "Validates a fictional plugin manifest and output.",
+      "root": ".cue-eval/toy-plugin",
+      "review": { "state": "candidate" },
+      "sources": ["contracts.cue", "pack.cue"],
+      "inputRoots": [".cue-eval/toy-plugin/fixtures"],
+      "targets": [
+        {"name":"manifest","definition":"#PluginManifest","artifactKinds":["plugin-manifest"],"formats":["json","yaml","cue"]},
+        {"name":"output","definition":"#PluginOutput","artifactKinds":["plugin-output"],"formats":["json","yaml","cue"]}
+      ]
+    },
+    {
+      "id": "puppet-domain-example",
+      "title": "Synthetic Puppet domain contracts",
+      "summary": "Validates fictional source fragments and resolved node data.",
+      "root": "integrations/puppet/examples",
+      "review": { "state": "candidate" },
+      "sources": ["domain.cue"],
+      "inputRoots": ["integrations/puppet/examples/fixtures"],
+      "targets": [
+        {"name":"source-fragment","definition":"#SourceHieraFragment","artifactKinds":["hiera-source-fragment"],"formats":["json","yaml","cue"]},
+        {"name":"effective-node-data","definition":"#EffectiveNodeData","artifactKinds":["effective-node-data"],"formats":["json","yaml","cue"]}
+      ]
+    }
+  ]
+}

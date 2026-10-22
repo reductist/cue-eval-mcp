@@ -1,0 +1,4 @@
+.git
+.gitignore
+bin
+packaging/devcontainer-feature/src/cue-eval-mcp/artifacts/*

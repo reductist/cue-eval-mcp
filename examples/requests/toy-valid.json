@@ -1,0 +1,16 @@
+{
+  "apiVersion": "cue-eval.dev/v1alpha1",
+  "items": [
+    {
+      "id": "toy-valid",
+      "mode": "implementation",
+      "pack": "toy-plugin",
+      "target": "manifest",
+      "format": "json",
+      "source": {
+        "type": "file",
+        "path": ".cue-eval/toy-plugin/fixtures/positive.json"
+      }
+    }
+  ]
+}

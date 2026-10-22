@@ -1,0 +1,19 @@
+{
+  "id": "cue-eval-mcp",
+  "version": "0.1.0",
+  "name": "cue-eval-mcp",
+  "description": "Install a verified local cue-eval-mcp binary without registering it with an agent.",
+  "documentationURL": "https://github.com/reductist/cue-eval-mcp/tree/main/packaging/devcontainer-feature",
+  "options": {
+    "artifactPath": {
+      "type": "string",
+      "default": "",
+      "description": "Optional binary path already accessible inside the Feature install container. Requires artifactSha256."
+    },
+    "artifactSha256": {
+      "type": "string",
+      "default": "",
+      "description": "Required lowercase SHA-256 digest when artifactPath is set."
+    }
+  }
+}

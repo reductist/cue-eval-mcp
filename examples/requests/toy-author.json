@@ -1,0 +1,17 @@
+{
+  "apiVersion": "cue-eval.dev/v1alpha1",
+  "items": [
+    {
+      "id": "toy-author",
+      "mode": "author",
+      "pack": "toy-plugin",
+      "target": "manifest",
+      "format": "cue",
+      "expression": "#CandidateManifest",
+      "source": {
+        "type": "file",
+        "path": ".cue-eval/toy-plugin/fixtures/incomplete.cue"
+      }
+    }
+  ]
+}

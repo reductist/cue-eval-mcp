@@ -1,0 +1,4 @@
+/bin/
+/.cue-eval/evidence/
+*.test
+coverage.out

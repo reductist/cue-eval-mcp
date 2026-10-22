@@ -1,0 +1,45 @@
+{
+  "apiVersion": "cue-eval.dev/project/v1alpha1",
+  "packs": [
+    {
+      "id": "evaluator-basic",
+      "title": "Evaluator semantics fixture",
+      "summary": "Exercises defaults, completeness, conflicts, and redacted diagnostics.",
+      "root": "testdata/evaluator/basic",
+      "review": {"state": "candidate"},
+      "sources": ["contracts.cue", "pack.cue"],
+      "inputRoots": ["testdata/evaluator/basic/subjects"],
+      "targets": [
+        {
+          "name": "record",
+          "definition": "#Record",
+          "artifactKinds": ["test-record"],
+          "formats": ["json", "yaml", "cue"]
+        },
+        {
+          "name": "strict-evidence",
+          "definition": "#StrictEvidence",
+          "artifactKinds": ["test-record"],
+          "formats": ["json", "yaml"]
+        }
+      ]
+    },
+    {
+      "id": "evaluator-imported",
+      "title": "Rejected import fixture",
+      "summary": "Exercises the safe evaluator's import rejection.",
+      "root": "testdata/evaluator/imported",
+      "review": {"state": "candidate"},
+      "sources": ["contracts.cue", "pack.cue"],
+      "inputRoots": ["testdata/evaluator/imported"],
+      "targets": [
+        {
+          "name": "record",
+          "definition": "#Record",
+          "artifactKinds": ["test-record"],
+          "formats": ["json"]
+        }
+      ]
+    }
+  ]
+}

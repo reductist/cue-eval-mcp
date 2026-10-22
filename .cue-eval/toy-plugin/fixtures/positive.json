@@ -1,0 +1,6 @@
+{
+  "apiVersion": "toy.dev/v1",
+  "name": "sample-transformer",
+  "timeoutMs": 1500,
+  "capabilities": ["read", "transform"]
+}

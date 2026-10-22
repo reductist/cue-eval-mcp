@@ -1,0 +1,17 @@
+{
+  "hostname": "node-001.example.invalid",
+  "datacenter": "dc-a",
+  "environment": "dev",
+  "hostnameIdentity": {
+    "parser": "fictional-parser-v1",
+    "datacenter": "dc-a",
+    "environment": "dev"
+  },
+  "web": {
+    "enabled": false,
+    "settings": {
+      "mode": "development",
+      "logLevel": "debug"
+    }
+  }
+}
