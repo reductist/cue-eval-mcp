@@ -46,4 +46,5 @@ gate.
 See [DESIGN.md](DESIGN.md) for architecture and limitations,
 [the Codex guide](agents/codex/README.md) for agent setup,
 [the Puppet integration](integrations/puppet/README.md) for a worked example,
-and [packaging](packaging/README.md) for container and Feature usage.
+[packaging](packaging/README.md) for container and Feature usage, and
+[CONTRIBUTING.md](CONTRIBUTING.md) for the preferred branch and review workflow.
